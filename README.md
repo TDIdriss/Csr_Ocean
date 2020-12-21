@@ -27,6 +27,11 @@ On aura aussi une méthode transporté pour matérialiser le transport des poiss
 4.	Poissons
 
 Elle contiendra aussi la zone dans laquelle les poissons sont comme variable, des méthodes Attacher et détacher pour matérialiser l’action de s’accrocher a un requin pour aller dans une autre zone et se décrocher une fois arrivé.
+
+
+
+
+
 PROBLEME DE SYNCHRONISATION
 
 Comme problème de synchro on a eu :
