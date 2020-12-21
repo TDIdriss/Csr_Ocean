@@ -2,14 +2,13 @@ import java.util.Random;
 
 public class Requins extends Thread {
 
-    private int nbreCycle;
+    public static final int NBRECYCLE=10;  // nombre de cycle Max
+    private int actuCycle;  // nombre de cycle actuel du requins
     private Zone ze;
     public static final int P=5 ; //nombre de poissons Max transportés
     private int actuPoissons; // nombre de poissons sur le requin
 
-    public Requins(){
 
-    }
 
     public void setZoneRequuin(Zone zone){
         this.ze=zone;
@@ -107,7 +106,7 @@ public class Requins extends Thread {
 
 
     public void run(){
-        while (nbreCycle<=10) {// On prendre un nombre de Cycle egal a 10
+        while (actuCycle<=NBRECYCLE) {// On prendre un nombre de Cycle egal a 10
 
 
             ze.sortir();
@@ -117,10 +116,11 @@ public class Requins extends Thread {
     }
 
     public int getNbreCycle() {
-        return nbreCycle;
+        return actuCycle;
     }
 
-    public void setNbreCycle(int nbreCycle) {
-        this.nbreCycle = nbreCycle;
+    public void setNbreCycle(int actuCycle) {
+        this.actuCycle= actuCycle;
+
     }
 }

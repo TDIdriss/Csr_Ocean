@@ -4,8 +4,8 @@ public class Ocean {
 
     public static final int n=6;   // 6*6 Zones a créer
     //private Zone zone;
-    public static Zone tabZone[][] = new Zone[n][n];
-    private Poissons tabPoissons[]= new Poissons[100];
+    public static Zone tabZone[][] = new Zone[n][n]; // table contenant l'ensemble de nos zone
+
 
      public Ocean(){
         //this.n=n;
